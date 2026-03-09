@@ -1,4 +1,4 @@
-<!-- 🌌 Animated Header -->
+<!-- 🌌 Header -->
 <p align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,100:2c5364&height=220&section=header&text=Hand%20Gesture%20Volume%20Control&fontSize=45&fontColor=ffffff&animation=fadeIn"/>
 </p>
@@ -10,7 +10,7 @@
 
 ---
 
-# 🏆 Tech Badges
+# 🏆 Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3670A0?logo=python&logoColor=ffdd54)
 ![OpenCV](https://img.shields.io/badge/OpenCV-27338e?logo=opencv&logoColor=white)
@@ -21,156 +21,116 @@
 
 # 📌 Project Overview
 
-**Hand Gesture Volume Control** is a computer vision project that allows you to control system volume using hand gestures captured from a webcam.
+This project allows you to control your system volume using simple **hand gestures** captured from a webcam.
 
-This project uses **MediaPipe Hand Tracking** to detect hand landmarks and **OpenCV** for image processing. The distance between the **thumb and index finger** controls the volume level.
+The program detects the distance between the **thumb and index finger** and adjusts the system volume accordingly.
 
----
+It uses:
 
-# 🧠 AI / Computer Vision Explanation
-
-This project uses **hand landmark detection** provided by MediaPipe.
-
-Steps involved:
-
-1️⃣ Capture webcam frames using OpenCV  
-2️⃣ Convert frame to RGB format  
-3️⃣ MediaPipe detects **21 hand landmarks**  
-4️⃣ Extract coordinates of thumb and index finger  
-5️⃣ Calculate distance using **Euclidean distance**  
-6️⃣ Map distance to system volume level  
-
-Volume adjustment is performed using **Pycaw library**.
+- **OpenCV** for video processing  
+- **MediaPipe** for hand landmark detection  
+- **Pycaw** for controlling system audio  
 
 ---
 
-# 📊 Project Architecture
+# 🧠 How It Works
 
-
-Webcam
-│
-▼
-OpenCV Video Capture
-│
-▼
-MediaPipe Hand Detection
-│
-▼
-Landmark Extraction
-│
-▼
-Distance Calculation
-│
-▼
-Volume Mapping
-│
-▼
-System Volume Control
-
-
----
-
-# 📷 Live Demo
-
-Add your demo GIF or screenshot here.
-
-Example:
-
-
-
-Or screenshot:
-
-
+1. Webcam captures the video feed  
+2. Frames are processed using OpenCV  
+3. MediaPipe detects hand landmarks  
+4. The distance between thumb and index finger is calculated  
+5. That distance is mapped to system volume level  
+6. Volume bar is displayed on the screen in real time  
 
 ---
 
 # 📦 Required Python Packages
 
 
-opencv-python
-mediapipe
-numpy
-pycaw
-comtypes
+- opencv-python
+- mediapipe
+- numpy
+- pycaw
+- comtypes
 
 
 ---
 
-# ⚙ Installation Guide
+# ⚙ Installation
 
 ## 🪟 Windows
 
-Clone repository
+1. Clone the repository
 
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+2. git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
 
 
-Move into project folder
+3. Go to project folder
 
 
-cd YOUR_REPOSITORY_NAME
+4. cd YOUR_REPOSITORY_NAME
 
 
-Install required packages
+5. Install dependencies
 
 
-pip install opencv-python mediapipe numpy pycaw comtypes
+6. pip install opencv-python mediapipe numpy pycaw comtypes
 
 
-Run the program
+7. Run the program
 
 
-python volume_control.py
+8. python volume_control.py
 
 
 ---
 
 ## 🐧 Linux
 
-Clone repository
+1. Clone repository
 
 
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+2. git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
 
 
-Move into project folder
+3. Go to project folder
 
 
-cd YOUR_REPOSITORY_NAME
+4. cd YOUR_REPOSITORY_NAME
 
 
-Install dependencies
+5. Install dependencies
 
 
-pip3 install opencv-python mediapipe numpy pycaw comtypes
+6. pip3 install opencv-python mediapipe numpy pycaw comtypes
 
 
-Run program
+7. Run program
 
 
-python3 volume_control.py
+8. python3 volume_control.py
 
 
 ---
 
 # ▶ Usage
 
-1️⃣ Run the script  
-2️⃣ Show your hand in front of the camera  
-3️⃣ Move **thumb and index finger closer or farther**  
-4️⃣ Volume will increase or decrease accordingly  
+1. Run the script  
+2. Show your hand in front of the camera  
+3. Adjust the distance between **thumb and index finger**  
+4. Volume will increase or decrease accordingly  
 
-Press **SPACEBAR** to stop the program.
+Press **SPACEBAR** to exit the program.
 
 ---
 
 # 🚀 Future Improvements
 
-• Add mute gesture  
-• Multi-hand support  
-• GUI interface  
-• Cross-platform audio control  
+- Add mute gesture  
+- Multi-hand support  
+- GUI interface  
+- Cross-platform audio support  
 
 ---
 
