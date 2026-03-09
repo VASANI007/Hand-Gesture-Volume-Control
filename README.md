@@ -114,7 +114,7 @@ It uses:
 
 ---
 
-# ▶ Usage
+# 🧑‍💻 Usage
 
 1. Run the script  
 2. Show your hand in front of the camera  
